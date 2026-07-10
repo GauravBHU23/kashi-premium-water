@@ -1,3 +1,8 @@
+import Maintenance from './pages/Maintenance';
+
+// Set to false to restore the full site
+const MAINTENANCE_MODE = true;
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -10,6 +15,8 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
 function App() {
+  if (MAINTENANCE_MODE) return <Maintenance />;
+
   return (
     <BrowserRouter>
       <Routes>
