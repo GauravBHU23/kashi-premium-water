@@ -1,7 +1,7 @@
 import Maintenance from './pages/Maintenance';
 
 // Set to false to restore the full site
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
